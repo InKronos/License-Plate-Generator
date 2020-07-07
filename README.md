@@ -30,10 +30,12 @@ font = ImageFont.truetype('font/arklatrs.ttf', 88)
 ## Results
 
 preview unscaled plate:
-![Image before scaling](relative/preview/unscaled.png?raw=true "unscaled")
+
+![Image before scaling](preview/unscaled.png?raw=true "unscaled")
 
 preview scaled plate:
-![Image after scaling](relative/path/to/scaled.png?raw=true "scaled")
+
+![Image after scaling](preview/scaled.png?raw=true "scaled")
 
 ## Author
 Program was made by **InKronos**
