@@ -1,6 +1,6 @@
 # POLISH LICENCE PLATE GENERATOR
 
-Generating polish license plates using python
+Generating polish license plates using python and scaling them for machine learning purposes.
 
 ## Installation
 
