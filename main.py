@@ -19,7 +19,7 @@ def printRegistration(name):
 
     #converting PIL Image to np array
     imageInCV = np.asarray(imageInPIL)
-    cv.imwrite('preview/unscaled.png', imageInCV) #save image
+
     a = 0.13    #size of small image
     r = (int(imageInCV.shape[1]*a), int(imageInCV.shape[0]*a))
     imag2 = cv.resize(imageInCV, r)
