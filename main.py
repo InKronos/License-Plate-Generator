@@ -10,7 +10,7 @@ def printRegistration(name):
     #converting it to PIL Image
     imageInPIL = Image.fromarray(np.uint8(input)).convert('RGBA')
     draw = ImageDraw.Draw(imageInPIL)
-    font = ImageFont.truetype('font/arklatrs.ttf', 88) #font and size of it
+    font = ImageFont.truetype('font/arklatrs.ttf', 88) #font and size of it (Polish license plates)
 
     (x, y) = (50, 5) #where string will be generated
     message = name
@@ -19,7 +19,7 @@ def printRegistration(name):
 
     #converting PIL Image to np array
     imageInCV = np.asarray(imageInPIL)
-
+    cv.imwrite('preview/unscaled.png', imageInCV) #save image
     a = 0.13    #size of small image
     r = (int(imageInCV.shape[1]*a), int(imageInCV.shape[0]*a))
     imag2 = cv.resize(imageInCV, r)
@@ -27,7 +27,7 @@ def printRegistration(name):
     w, h = (40, 40) #quality of new image (the bigger the better)
     #resize image
     imageInCV = cv.resize(imageInCV, r)
-    #pixelizaiz of picture
+    #pixelizaize picture
     temp = cv.resize(imageInCV, (w, h), interpolation=cv.INTER_LINEAR)
     output = cv.resize(temp, (width, height), interpolation=cv.INTER_NEAREST)
     #return imageInCV
