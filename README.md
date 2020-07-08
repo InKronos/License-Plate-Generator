@@ -16,7 +16,7 @@ pip install Pillow
 To generate polish license plates use this
 
 ```bash
-main.py -f file
+python main.py -f file
 ```
 If you what generate plate from another county make blank plate and change path:
 ```python
